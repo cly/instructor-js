@@ -9,6 +9,10 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
   ],
+  parserOptions: {
+    ecmaVersion: 2020, // or the latest version you are using
+    sourceType: "module" // This is crucial for parsing import/export syntax
+  },
   rules: {
     "import/no-anonymous-default-export": "off",
     "prettier/prettier": "error",
